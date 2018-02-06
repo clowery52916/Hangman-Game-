@@ -7,5 +7,8 @@ h5, p {
     text-align: center;  
 }
 .buttonForLetter {
-    
+    float: left;
+    width: 50px;
+    height: 50px;
+
 }
