@@ -3,10 +3,10 @@ let userName = prompt ('Hello! What\'s your name?');
  (userName !== null) 
  alert ('Hey there, ' + userName + '. I am really excited to play with you!');
 
-const abc = [
+/*const abc = [
   'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j',
    'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 
-   'w', 'x', 'y', 'z'];
+   'w', 'x', 'y', 'z'];*/
 // list of letters to be picked 
 
 let kWords = ['people', 'write', 'city', 'could', 'said', 'time', 'these', 'their', 'which', 'your']
@@ -14,14 +14,10 @@ let kWords = ['people', 'write', 'city', 'could', 'said', 'time', 'these', 'thei
 
 let kWord = kWords[Math.floor(Math.random() * kWords.length)];
 //create variable for all words 
-let letterRemaining = kWord.length;
-
-while(letterRemaining > 0) {
-  console.log(lettersRemaining += kWord.charAt(Math.floor(Math.random() * kWord.length)));
-  
-  lettersRemaining++;
-}
-
+let emptyWords = kWords.map((string) => {
+  return string * string;
+});
+console.log(kWords);
 //create a new array for answers 
 //let reamining letter = randomWord.length
 /*let arrayForAnswers = [];

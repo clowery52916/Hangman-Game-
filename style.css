@@ -10,7 +10,7 @@ h5, p {
     margin: auto;
 }
 .buttonForLetter {
-
+    
     display: table-cell;
     vertical-align: middle;
     align-content: center;
