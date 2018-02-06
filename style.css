@@ -6,12 +6,15 @@ h1 {
 h5, p {
     text-align: center;  
 }
+#menu {
+    text-align: center;
+}
 .containerOfLetters {
     margin: auto;
 }
 .buttonForLetter {
-    
-    display: table-cell;
+
+    display: inline-table;
     vertical-align: middle;
     align-content: center;
     margin: auto;

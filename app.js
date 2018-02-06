@@ -3,26 +3,32 @@ let userName = prompt ('Hello! What\'s your name?');
  (userName !== null) 
  alert ('Hey there, ' + userName + '. I am really excited to play with you!');
 
-/*const abc = [
-  'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j',
-   'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 
-   'w', 'x', 'y', 'z'];*/
-// list of letters to be picked 
 
-let kWords = ['people', 'write', 'city', 'could', 'said', 'time', 'these', 'their', 'which', 'your']
-//create while loops to find the words 
+const wordsToUse = 
+   ['people', 'write', 'city', 'could', 'said', 'time', 'these', 'their', 'which', 'your'];
+  ['bell', 'see', 'say', 'day', 'cat', 'hat', 'dog', 'log', 'mom', 'dad', 'car', 'horn'];
 
-let kWord = kWords[Math.floor(Math.random() * kWords.length)];
-//create variable for all words 
-let emptyWords = kWords.map((string) => {
-  return string * string;
+let word = wordsToUse.map(function(w){
+  return w * w;
 });
-console.log(kWords);
-//create a new array for answers 
-//let reamining letter = randomWord.length
-/*let arrayForAnswers = [];
-for (i = 0; i > kWord.length; i++) {
-  arrayForAnswers[i] = ' ';
+console.log(wordsToUse);
 
-}*/
-//do while if/else statements 
+lettersToPick = ['abcdefghijklmnop'];
+  let letters = lettersToPick.map(function(l){
+    return l * l;
+  })
+  console.log(lettersToPick);
+
+
+
+
+let button = document.getElementById('.buttonForLetters');
+
+
+
+// if user clicks letter(button) and it is a valid letter - move to list ELSE hide 
+
+ /* $('button').click( {
+    $(event)
+
+  })*/
