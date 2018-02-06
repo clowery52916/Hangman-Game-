@@ -1,95 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Hangman Game </title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-        <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
-    </head>
- <body>
-     
-    <h1>YOU'RE INCREDIBLE!</h1>
-    <h5>Let's get ready to play! Follow these instructions and get ready to learn some awesome new words!</h5>
-    <p>The rules are simple! Pick any letter of the alphabet and try to solve the puzzle! You are given a 
-        category, and the numbers of spaces, are the number of words in the letter or phrase,
-         the user or your opponent has chosen! If you don't get the correct letter, the character you have picked will be hanged! Watch out! If you think you can solve the puzzle, click the solve now!</br>
-        Good Luck!!!! </p>
-        <body>
-                <div class="btn-group" id="choose-category">
-                        <button type="button" class="btn btn-info btn-lg dropdown-toggle" data-toggle="dropdown">Select a category <span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu" role="menu">
-                          <li id="K"></li><button type="button" class="btn btn-info btn-lg dropdown-toggle" data-toggle="dropdown">1st</i></a></div>
-                          <li id="1"></li><button type="button" class="btn btn-info btn-lg dropdown-toggle" data-toggle="dropdown">2nd</button>
-                          
-                        </ul>
-                      </div>
-             <div id=containerOfLetters>
-                <div class=buttonForLetter><a class="btn-floating btn-large waves-effect waves teal"><i class="material-icons">A</i></a></div>
-                <div class=buttonForLetter><a class="btn-floating btn-large waves-effect waves teal"><i class="material-icons">B</i></a></div>
-                <div class=buttonForLetter><a class="btn-floating btn-large waves-effect waves teal"><i class="material-icons">C</i></a></div>
-                <div class=buttonForLetter><a class="btn-floating btn-large waves-effect waves teal"><i class="material-icons">D</i></a></div>
-                <div class=buttonForLetter><a class="btn-floating btn-large waves-effect waves teal"><i class="material-icons">E</i></a></div>
-                <div class=buttonForLetter><a class="btn-floating btn-large waves-effect waves teal"><i class="material-icons">F</i></a></div></div></br>
-                <div class=buttonForLetter><a class="btn-floating btn-large waves-effect waves teal"><i class="material-icons">G</i></a></div>
-                <div class=buttonForLetter><a class="btn-floating btn-large waves-effect waves teal"><i class="material-icons">H</i></a></div>
-                <div class=buttonForLetter><a class="btn-floating btn-large waves-effect waves teal"><i class="material-icons">I</i></a></div>
-                <div class=buttonForLetter><a class="btn-floating btn-large waves-effect waves teal"><i class="material-icons">J</i></a></div>
-                <div class=buttonForLetter><a class="btn-floating btn-large waves-effect waves teal"><i class="material-icons">K</i></a></div>
-                <div class=buttonForLetter><a class="btn-floating btn-large waves-effect waves teal"><i class="material-icons">L</i></a></div></br>
-                <div class=buttonForLetter><a class="btn-floating btn-large waves-effect waves teal"><i class="material-icons">M</i></a></div>
-                <div class=buttonForLetter><a class="btn-floating btn-large waves-effect waves teal"><i class="material-icons">N</i></a></div>
-                <div class=buttonForLetter><a class="btn-floating btn-large waves-effect waves teal"><i class="material-icons">O</i></a></div>
-                <div class=buttonForLetter><a class="btn-floating btn-large waves-effect waves teal"><i class="material-icons">P</i></a></div>
-                <div class=buttonForLetter><a class="btn-floating btn-large waves-effect waves teal"><i class="material-icons">Q</i></a></div>
-                <div class=buttonForLetter><a class="btn-floating btn-large waves-effect waves teal"><i class="material-icons">R</i></a></div></br>
-                <div class=buttonForLetter><a class="btn-floating btn-large waves-effect waves teal"><i class="material-icons">S</i></a></div>
-                <div class=buttonForLetter><a class="btn-floating btn-large waves-effect waves teal"><i class="material-icons">T</i></a></div>
-                <div class=buttonForLetter><a class="btn-floating btn-large waves-effect waves teal"><i class="material-icons">U</i></a></div>
-                <div class=buttonForLetter><a class="btn-floating btn-large waves-effect waves teal"><i class="material-icons">V</i></a></div>
-                <div class=buttonForLetter><a class="btn-floating btn-large waves-effect waves teal"><i class="material-icons">W</i></a></div>
-                <div class=buttonForLetter><a class="btn-floating btn-large waves-effect waves teal"><i class="material-icons">X</i></a></div></br>
-                <div class=buttonForLetter><a class="btn-floating btn-large waves-effect waves teal"><i class="material-icons">Y</i></a></div>
-                <div class=buttonForLetter><a class="btn-floating btn-large waves-effect waves teal"><i class="material-icons">Z</i></a></div>
-            </div>
-            <h5>xxx</h5>
-                <p>
-                <div class="remainingLetters">
-                  <div class="row">
-                    <div id="unguessed-letters"></div>
-                  </div>
-                  <div class="row">
-                    <div id="word-container" class="initially-hidden">
-                      <p class="letter"></p>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div id="incorrect-guesses">
-                      <h3 class="light-weight">Incorrect Guesses: </h3>
-                    </div>
-                </p>
-                  </div>
-                  <footer>
-                  <div class="row">
-                    <button class="btn btn-lg btn-success" id="play-again">Play again?</button>
-                  </div>
-                </div>
-            </footer>
-                   </div>
-        
-              </div>
-            </div>
-        <script
-  src="http://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-  <script https://cdnjs.cloudflare.com/ajax/libs/snabbt.js/0.6.4/snabbt.min.js></script>
-   <script src="./app.js"></script>
-  </script>
-   </body>
+<head>
+	<title>Hangman Game</title>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="animate.css">
+</head>
+<body>
+	<h1>YOU'RE INCREDIBLE!</h1>
+	<h5>Let's get ready to play! Follow these instructions and get ready to learn some awesome new words!</h5>
+	<p>The rules are simple! Pick any letter of the alphabet and try to solve the puzzle! You are given a category, and the numbers of spaces, are the number of words in the letter or phrase, the user or your opponent has chosen! If you don't get the correct letter, the character you have picked will be hanged! Watch out! If you think you can solve the puzzle, click the solve now!<br>
+	Good Luck!!!!</p>
+	<div class="btn-group" id="choose-category">
+		<button class="btn btn-info btn-lg dropdown-toggle" data-toggle="dropdown" type="button">Select a category <span class="caret"></span></button>
+		<ul class="dropdown-menu" role="menu">
+			<li id="K"></li>
+			<li style="list-style: none"><button class="btn btn-info btn-lg dropdown-toggle" data-toggle="dropdown" type="button">1st</button></li>
+		</ul>
+	</div>
+	<ul>
+		<li id="1"></li>
+		<li style="list-style: none"><button class="btn btn-info btn-lg dropdown-toggle" data-toggle="dropdown" type="button">2nd</button></li>
+    </ul>
+    <hinge>
+	<div id="containerOfLetters">
+		<div class="buttonForLetter">
+			<a class="btn-floating btn-large waves-effect waves teal"><i class="material-icons">A</i></a>
+		</div>
+		<div class="buttonForLetter">
+			<a class="btn-floating btn-large waves-effect waves teal"><i class="material-icons">B</i></a>
+		</div>
+		<div class="buttonForLetter">
+			<a class="btn-floating btn-large waves-effect waves teal"><i class="material-icons">C</i></a>
+		</div>
+		<div class="buttonForLetter">
+			<a class="btn-floating btn-large waves-effect waves teal"><i class="material-icons">D</i></a>
+		</div>
+		<div class="buttonForLetter">
+			<a class="btn-floating btn-large waves-effect waves teal"><i class="material-icons">E</i></a>
+		</div>
+		<div class="buttonForLetter">
+			<a class="btn-floating btn-large waves-effect waves teal"><i class="material-icons">F</i></a>
+		</div>
+	</div><br>
+	<div class="buttonForLetter">
+		<a class="btn-floating btn-large waves-effect waves teal"><i class="material-icons">G</i></a>
+	</div>
+	<div class="buttonForLetter">
+		<a class="btn-floating btn-large waves-effect waves teal"><i class="material-icons">H</i></a>
+	</div>
+	<div class="buttonForLetter">
+		<a class="btn-floating btn-large waves-effect waves teal"><i class="material-icons">I</i></a>
+	</div>
+	<div class="buttonForLetter">
+		<a class="btn-floating btn-large waves-effect waves teal"><i class="material-icons">J</i></a>
+	</div>
+	<div class="buttonForLetter">
+		<a class="btn-floating btn-large waves-effect waves teal"><i class="material-icons">K</i></a>
+	</div>
+	<div class="buttonForLetter">
+		<a class="btn-floating btn-large waves-effect waves teal"><i class="material-icons">L</i></a>
+	</div><br>
+	<div class="buttonForLetter">
+		<a class="btn-floating btn-large waves-effect waves teal"><i class="material-icons">M</i></a>
+	</div>
+	<div class="buttonForLetter">
+		<a class="btn-floating btn-large waves-effect waves teal"><i class="material-icons">N</i></a>
+	</div>
+	<div class="buttonForLetter">
+		<a class="btn-floating btn-large waves-effect waves teal"><i class="material-icons">O</i></a>
+	</div>
+	<div class="buttonForLetter">
+		<a class="btn-floating btn-large waves-effect waves teal"><i class="material-icons">P</i></a>
+	</div>
+	<div class="buttonForLetter">
+		<a class="btn-floating btn-large waves-effect waves teal"><i class="material-icons">Q</i></a>
+	</div>
+	<div class="buttonForLetter">
+		<a class="btn-floating btn-large waves-effect waves teal"><i class="material-icons">R</i></a>
+	</div><br>
+	<div class="buttonForLetter">
+		<a class="btn-floating btn-large waves-effect waves teal"><i class="material-icons">S</i></a>
+	</div>
+	<div class="buttonForLetter">
+		<a class="btn-floating btn-large waves-effect waves teal"><i class="material-icons">T</i></a>
+	</div>
+	<div class="buttonForLetter">
+		<a class="btn-floating btn-large waves-effect waves teal"><i class="material-icons">U</i></a>
+	</div>
+	<div class="buttonForLetter">
+		<a class="btn-floating btn-large waves-effect waves teal"><i class="material-icons">V</i></a>
+	</div>
+	<div class="buttonForLetter">
+		<a class="btn-floating btn-large waves-effect waves teal"><i class="material-icons">W</i></a>
+	</div>
+	<div class="buttonForLetter">
+		<a class="btn-floating btn-large waves-effect waves teal"><i class="material-icons">X</i></a>
+	</div><br>
+	<div class="buttonForLetter">
+		<a class="btn-floating btn-large waves-effect waves teal"><i class="material-icons">Y</i></a>
+	</div>
+	<div class="buttonForLetter">
+        <a class="btn-floating btn-large waves-effect waves teal"><i class="material-icons">Z</i></a>
+    </hinge>
+    <table>
+        <tbody>
+            <th>
+                <tr class='bttn'><a class="btn-floating btn-large waves-effect waves teal"><i class="material-icons">Z</i></a>
+
+                </tr>
+            </th>
+        </tbody>
+    </table>
+	</div>
+	<h5>xxx</h5>
+	<p></p>
+	<div class="remainingLetters">
+		<div class="row">
+			<div id="unguessed-letters"></div>
+		</div>
+		<div class="row">
+			<div class="initially-hidden" id="word-container">
+				<p class="letter"></p>
+			</div>
+		</div>
+		<div class="row">
+			<div id="incorrect-guesses">
+				<h6 class="light-weight">Incorrect Guesses:</h6>
+			</div>
+			<p></p>
+		</div>
+		<footer>
+			<div class="row">
+				<button class="btn btn-lg btn-success" id="play-again">Play again?</button>
+			</div>
+		</footer>
+	</div>
+	<script src="http://code.jquery.com/jquery-3.3.1.min.js">
+	</script> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js">
+	</script> 
+	<script>
+	</script> 
+	<script src="./app.js">
+	</script> 
+</body>
 </html>
-
-

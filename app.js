@@ -7,14 +7,17 @@ let userName = prompt ('Hello! What\'s your name?');
 const wordsToUse = 
    ['people', 'write', 'city', 'could', 'said', 'time', 'these', 'their', 'which', 'your'];
   ['bell', 'see', 'say', 'day', 'cat', 'hat', 'dog', 'log', 'mom', 'dad', 'car', 'horn'];
+  
+const wordSelector = Math.floor(Math.random () * (wordsToUse[''])); 
 
 let word = wordsToUse.map(function(w){
   return w * w;
 });
-console.log(wordsToUse);
+console.log(wordsToUse)
 
 lettersToPick = ['abcdefghijklmnop'];
-  let letters = lettersToPick.map(function(l){
+
+let letters = lettersToPick.map(function(l){
     return l * l;
   })
   console.log(lettersToPick);
@@ -22,7 +25,8 @@ lettersToPick = ['abcdefghijklmnop'];
 
 
 
-let button = document.getElementById('.buttonForLetters');
+let button = document.getElementsByClassName('.buttonForLetters');
+ 
 
 
 
