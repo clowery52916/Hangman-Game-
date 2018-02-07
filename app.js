@@ -42,10 +42,11 @@ $('.buttonForLetter').each((number, value) => {
   let diff = $(this).attr('span');
   if (wordOnPage.indexOf() === 0) {
     
-  }
   console.log(diff);
 
-})
+  }
+
+  // note - let x = str.match(/letter1/letter2)
 /*
 lettersToPick = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p'];
 lettersToPick.random = function(){
