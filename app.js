@@ -18,15 +18,18 @@ let wordOnPage = Array.from(new Set(output));
 
 console.log(wordOnPage);
 
+var word = 0;
+for (i = 0; i < wordOnPage.length; i++){
+  if (wordOnPage[i] < word) {
+    word = wordOnPage[i];
+  }
+}
+console.log(word);
 
 lettersToPick = ['abcdefghijklmnop'];
 let randomLetter = Math.floor(Math.random) * (lettersToPick) -1; 
 
  console.log(lettersToPick);
-
- let letterToCompare = lettersToPick[randomLetter];
-
- console.log(letterToCompare)
 
  let button = document.getElementsByClassName('.buttonForLetters');
 $('.buttonForLetter').click((l) => {
