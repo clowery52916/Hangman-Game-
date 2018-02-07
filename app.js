@@ -17,19 +17,19 @@ let userName = prompt ('Hello! What\'s your name?');
 const firstWords = 
    ['people', 'write', 'city', 'could', 'said', 'time', 'these', 'their', 'which', 'your'];
  const kinderWords = ['bell', 'see', 'say', 'day', 'cat', 'hat', 'dog', 'log', 'mom', 'dad', 'car', 'horn'];
-//const wordSelector = kinderWords [Math.floor(Math.random () * kinderWords[''])]; 
-//console.log(wordSelector);
+//const wordSelector = [Math.floor(12*Math.random())
+//]
 let getRandomWord = function(str) {
   return kinderWords[Math.floor(Math.random() * kinderWords.length)];
 }
 let output = [].map.call(kinderWords, getRandomWord );
-console.log(output);
+
 
 let wordOnPage = Array.from(new Set(output));
 
 console.log(wordOnPage);
 
-('.wordSelection').append(wordOnPage);
+
 
 //document.getElementById('kinderWords').textContent = wordSelector;
 //let kWord = kinderWords.map(function(w){
@@ -54,20 +54,45 @@ console.log(wordOnPage);
   //while(kWord.length < 7) {
     //console.log(kWord += word.charAt(Math.floor(Math.random() * word.length)))
   //} 
-  
-  //let word = kWord && fWord === kWord && fWord 
-    //alert('Game Over')
-  //})
+
 
 
 lettersToPick = ['abcdefghijklmnop'];
+let randomLetter = Math.floor(Math.random) * (lettersToPick) -1; 
 
-let letters = lettersToPick.map(function(l){
- return l * l;
- })
  console.log(lettersToPick);
 
+ let letterToCompare = lettersToPick[randomLetter];
 
+ console.log(letterToCompare);
+
+ 
+
+ /*function intersect_arrays(wordOnPage, lettersToPick) {
+  var sorted_wordOnPage = wordOnPage.concat().sort();
+  var sorted_lettersToPick = lettersToPick.concat().sort();
+  var common = [];
+  var wordOnPage_i = 0;
+  var lettersToPick_i = 0;
+
+  while (wordOnPage_i < wordOnPage.length
+         && lettersToPick_i < lettersToPick.length)
+  {
+      if (sorted_wordOnPage[wordOnPage_i] === sorted_lettersToPick[lettersToPick_i]) {
+          common.push(sorted_wordOnPage[wordOnPage_i]);
+          wordOnPage_i++;
+          lettersToPick_i++;
+      }
+      else if(sorted_wordOnPage[wordOnPage_i] < sorted_lettersToPick[lettersToPick_i]) {
+        wordOnPage_i++;
+      }
+      else {
+        lettersToPick_i++;
+      }
+  }
+  return common;
+}
+console.log(intersect_arrays(wordOnPage, lettersToPick));*/
 //click button and pick a letter 
  let button = document.getElementsByClassName('.buttonForLetters');
 $('.buttonForLetter').click((l) => {

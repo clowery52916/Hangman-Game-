@@ -19,11 +19,13 @@
 		<ul class="dropdown-menu" role="menu">
 			<li id="K"></li>
 			<li style="list-style: none"><button class="btn btn-info btn-lg dropdown-toggle" data-toggle="dropdown" type="button">1st</button></li>
+			<li class="stage-one"></li>
 		</ul>
 	</div>
 	<ul>
 		<li id="1"></li>
 		<li style="list-style: none"><button class="btn btn-info btn-lg dropdown-toggle" data-toggle="dropdown" type="button">2nd</button></li>
+		<li class='stage-two'></li>
     </ul>
 	<div id="containerOfLetters">
 		<div class="buttonForLetter">
@@ -108,11 +110,15 @@
 	</div>
     <h5>Figure out the word! Keep in mind, these are normal, every day use words! </h5>
     <div id=wordContainer>
-	<p class="wordSelection"></p>
+	<span class ='letters-guessed'></span>
+	<span class ='incorrect-guess'></span>
     </div>	
 		<footer>
 			<div class='gameOver'>
 				<button class="btn btn-lg btn-success" id="replay">Play again?</button>
+			</div>
+			<div>
+				<div class ="letter-display"></div>
 			</div>
 		</footer>
 	</div>
