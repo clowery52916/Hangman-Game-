@@ -15,18 +15,8 @@
 	<p>The rules are simple! Pick any letter of the alphabet and try to solve the puzzle! You are given a category, and the numbers of spaces, are the number of words in the letter or phrase, the user or your opponent has chosen! If you don't get the correct letter, the character you have picked will be hanged! Watch out! If you think you can solve the puzzle, click the solve now!<br>
 	Good Luck!!!!</p>
 	<div class="btn-group" id="choose-category">
-		<button class="btn btn-info btn-lg dropdown-toggle" data-toggle="dropdown" type="button">Select a category <span class="caret"></span></button>
-		<ul class="dropdown-menu" role="menu">
-			<li id="K"></li>
-			<li style="list-style: none"><button class="btn btn-info btn-lg dropdown-toggle" data-toggle="dropdown" type="button">1st</button></li>
-			<li class="stage-one"></li>
-		</ul>
 	</div>
-	<ul>
-		<li id="1"></li>
-		<li style="list-style: none"><button class="btn btn-info btn-lg dropdown-toggle" data-toggle="dropdown" type="button">2nd</button></li>
-		<li class='stage-two'></li>
-    </ul>
+	
 	<div id="containerOfLetters">
 		<div class="buttonForLetter">
 			<a class="btn-floating btn-large waves-effect waves teal"><i class="material-icons">A</i></a>
@@ -115,11 +105,9 @@
     </div>	
 		<footer>
 			<div class='gameOver'>
-				<button class="btn btn-lg btn-success" id="replay">Play again?</button>
+				<button id='replay' class="btn btn-lg btn-success" id="replay">Play again?</button>
 			</div>
-			<div>
-				<div class ="letter-display"></div>
-			</div>
+		
 		</footer>
 	</div>
 	<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script> 
