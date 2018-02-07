@@ -14,9 +14,9 @@ let userName = prompt ('Hello! What\'s your name?');
  alert ('Hey there, ' + userName + '. I am really excited to play with you!');
 
 
-const kinderWords = 
+const firstWords = 
    ['people', 'write', 'city', 'could', 'said', 'time', 'these', 'their', 'which', 'your'];
- const firstWords = ['bell', 'see', 'say', 'day', 'cat', 'hat', 'dog', 'log', 'mom', 'dad', 'car', 'horn'];
+ const kinderWords = ['bell', 'see', 'say', 'day', 'cat', 'hat', 'dog', 'log', 'mom', 'dad', 'car', 'horn'];
 //const wordSelector = kinderWords [Math.floor(Math.random () * kinderWords[''])]; 
 //console.log(wordSelector);
 let getRandomWord = function(str) {
@@ -24,6 +24,11 @@ let getRandomWord = function(str) {
 }
 let output = [].map.call(kinderWords, getRandomWord );
 console.log(output);
+
+let wordOnPage = Array.from(new Set(output));
+
+console.log(wordOnPage);
+
 
 
 //document.getElementById('kinderWords').textContent = wordSelector;
