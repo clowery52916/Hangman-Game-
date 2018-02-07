@@ -17,22 +17,29 @@ let userName = prompt ('Hello! What\'s your name?');
 const kinderWords = 
    ['people', 'write', 'city', 'could', 'said', 'time', 'these', 'their', 'which', 'your'];
  const firstWords = ['bell', 'see', 'say', 'day', 'cat', 'hat', 'dog', 'log', 'mom', 'dad', 'car', 'horn'];
+//const wordSelector = kinderWords [Math.floor(Math.random () * kinderWords[''])]; 
+//console.log(wordSelector);
+let getRandomWord = function(str) {
+  return kinderWords[Math.floor(Math.random() * kinderWords.length)];
+}
+let output = [].map.call(kinderWords, getRandomWord );
+console.log(output);
 
-//const wordSelector = Math.floor(Math.random () * (wordsToUse[''])); 
 
+//document.getElementById('kinderWords').textContent = wordSelector;
 //let kWord = kinderWords.map(function(w){
 
 
 
 //});
-console.log(kinderWords);
-console.log(firstWords);
+//console.log(kinderWords);
+//console.log(firstWords);
 
 //let fWord = firstWords.map(function(w){
 //console.log(fWord);
 
 
-let word = [];
+//let word = [];
 
   //for(i = 0; i > kWord.length; i++) {
    // kWord[i].push(word);
