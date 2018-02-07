@@ -39,9 +39,10 @@ $('button').click((r) => {
 //making design for page 
 //let diff = wordOnPage;
 $('.buttonForLetter').each((number, value) => {
-  //let diff = $(this).attr('span');
-  //if (wordOnPage.indexOf() === 0){
-   // console.log(diff);
+  let diff = $(this).attr('span');
+  let x = str.match(/)
+  if (wordOnPage.indexOf(x) === 0){
+   console.log(diff);
   //  }
   })
     
