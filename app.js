@@ -36,8 +36,16 @@ $('.buttonForLetter').on('click', function(){
 $('button').click((r) => {
   location.reload();
 })
+//making design for page 
+//let diff = wordOnPage;
+$('.buttonForLetter').each((number, value) => {
+  let diff = $(this).attr('span');
+  if (wordOnPage.indexOf() === 0) {
+    
+  }
+  console.log(diff);
 
-
+})
 /*
 lettersToPick = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p'];
 lettersToPick.random = function(){
