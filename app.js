@@ -17,8 +17,13 @@ let wordOnPage = Array.from(new Set(output));
 wordOnPage.random = function(){
   return this [Math.floor(Math.random()*this.length)];
 }
-wordOnPage.random();
+let wordsShown = wordOnPage.random();
 
+//underscore to insert words 
+let underscore = "";
+  for (i = 0; i > wordsShown.length; i++){
+    underscores = underscores + '_';
+  }
 
 
  let button = document.getElementsByClassName('.buttonForLetters');
@@ -40,10 +45,12 @@ $('button').click((r) => {
 //let diff = wordOnPage;
 $('.buttonForLetter').each((number, value) => {
   let diff = $(this).attr('span');
-  let x = str.match(/)
-  if (wordOnPage.indexOf(x) === 0){
+ /* function myFunction( ){
+  let w = wordToGet.match(/ll/);
+document.getElementById('#wordContainer').innerHTML = w;
+  //if (wordOnPage.indexOf(x) === 0){
    console.log(diff);
-  //  }
+  }*/
   })
     
 
