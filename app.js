@@ -29,7 +29,7 @@ let wordOnPage = Array.from(new Set(output));
 
 console.log(wordOnPage);
 
-
+('.wordSelection').append(wordOnPage);
 
 //document.getElementById('kinderWords').textContent = wordSelector;
 //let kWord = kinderWords.map(function(w){
