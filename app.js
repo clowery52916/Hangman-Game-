@@ -20,31 +20,33 @@ const kinderWords =
 
 //const wordSelector = Math.floor(Math.random () * (wordsToUse[''])); 
 
-let kWord = kinderWords.map(function(w){
+//let kWord = kinderWords.map(function(w){
 
 
 
-});
+//});
 console.log(kinderWords);
 console.log(firstWords);
 
-let fWord = firstWords.map(function(w){
+//let fWord = firstWords.map(function(w){
+//console.log(fWord);
 
 
+let word = [];
 
-});
-  for(i = 0; i > kinderWords.length; i++)
-  kinderWords[i].push();
+  //for(i = 0; i > kWord.length; i++) {
+   // kWord[i].push(word);
+  //}
+    //console.log(word);
 
-  while(kinderWords.length < 7) {
-    console.log(kinderWords += word.charAt(Math.floor(Math.random() * word.length)))
-  } 
-
-  //let word = kWord && fWord === kWord && fWord 
-    alert('Game Over')
+  //while(kWord.length < 7) {
+    //console.log(kWord += word.charAt(Math.floor(Math.random() * word.length)))
+  //} 
   
+  //let word = kWord && fWord === kWord && fWord 
+    //alert('Game Over')
+  //})
 
-  console.log(word);
 
 lettersToPick = ['abcdefghijklmnop'];
 
