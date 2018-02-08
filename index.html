@@ -6,125 +6,114 @@
 	<meta content="width=device-width, initial-scale=1" name="viewport">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
-    <link rel="stylesheet" href="animate.css">
+	<link href="style.css" rel="stylesheet">
+	<link href="animate.css" rel="stylesheet">
 </head>
 <body>
-	<div class="container">
-	
-	</div>
-  </body>
-<body>
+	<div class="container"></div>
 	<h1>YOU'RE INCREDIBLE!</h1>
 	<h5>Let's get ready to play! Follow these instructions and get ready to learn some awesome new words!</h5>
 	<p>The rules are simple! Pick any letter of the alphabet and try to solve the puzzle! You are given a category, and the numbers of spaces, are the number of words in the letter or phrase, the user or your opponent has chosen! If you don't get the correct letter, the character you have picked will be hanged! Watch out! If you think you can solve the puzzle, click the solve now!<br>
 	Good Luck!!!!</p>
-	<div class="btn-group" id="choose-category">
-	</div>
+	<div class="btn-group" id="choose-category"></div>
 	<div id="input">
-
-			<!-- remaining guesses section -->
-			<!-- <div class="guess-counter">
-				<p>Guesses Remaining:</p> <h2 id="guesses">6</h2>
-			</div> -->
-
-			<!-- letter placeholders section -->
-			<div class="container">
-			<div class "hidden-word">
+		//buttons for letters
+		<div class="container">
+			<div class="hidden-word&quot;"></div>
+			<div class="buttonForLetter">
+				<a class="btn-floating btn-large waves-effect waves black"><i class="material-icons">A</i></a>
 			</div>
-		<div class="buttonForLetter">
-			<a class="btn-floating btn-large waves-effect waves black"><i class="material-icons">A</i></a>
-		</div>
-		<div class="buttonForLetter">
-			<a class="btn-floating btn-large waves-effect waves black"><i class="material-icons">B</i></a>
-		</div>
-		<div class="buttonForLetter">
-			<a class="btn-floating btn-large waves-effect waves black"><i class="material-icons">C</i></a>
-		</div>
-		<div class="buttonForLetter">
-			<a class="btn-floating btn-large waves-effect waves black"><i class="material-icons">D</i></a>
-		</div>
-		<div class="buttonForLetter">
-			<a class="btn-floating btn-large waves-effect waves black"><i class="material-icons">E</i></a>
-		</div>
-		<div class="buttonForLetter">
-			<a class="btn-floating btn-large waves-effect waves black"><i class="material-icons">F</i></a>
-		</div>
-	</div><br>
-	<div class="buttonForLetter">
-		<a class="btn-floating btn-large waves-effect waves black"><i class="material-icons">G</i></a>
-	</div>
-	<div class="buttonForLetter">
-		<a class="btn-floating btn-large waves-effect waves black"><i class="material-icons">H</i></a>
-	</div>
-	<div class="buttonForLetter">
-		<a class="btn-floating btn-large waves-effect waves black"><i class="material-icons">I</i></a>
-	</div>
-	<div class="buttonForLetter">
-		<a class="btn-floating btn-large waves-effect waves black"><i class="material-icons">J</i></a>
-	</div>
-	<div class="buttonForLetter">
-		<a class="btn-floating btn-large waves-effect waves black"><i class="material-icons">K</i></a>
-	</div>
-	<div class="buttonForLetter">
-		<a class="btn-floating btn-large waves-effect waves black"><i class="material-icons">L</i></a>
-	</div><br>
-	<div class="buttonForLetter">
-		<a class="btn-floating btn-large waves-effect waves black"><i class="material-icons">M</i></a>
-	</div>
-	<div class="buttonForLetter">
-		<a class="btn-floating btn-large waves-effect waves black"><i class="material-icons">N</i></a>
-	</div>
-	<div class="buttonForLetter">
-		<a class="btn-floating btn-large waves-effect waves black"><i class="material-icons">O</i></a>
-	</div>
-	<div class="buttonForLetter">
-		<a class="btn-floating btn-large waves-effect waves black"><i class="material-icons">P</i></a>
-	</div>
-	<div class="buttonForLetter">
-		<a class="btn-floating btn-large waves-effect waves black"><i class="material-icons">Q</i></a>
-	</div>
-	<div class="buttonForLetter">
-		<a class="btn-floating btn-large waves-effect waves black"><i class="material-icons">R</i></a>
-	</div><br>
-	<div class="buttonForLetter">
-		<a class="btn-floating btn-large waves-effect waves black"><i class="material-icons">S</i></a>
-	</div>
-	<div class="buttonForLetter">
-		<a class="btn-floating btn-large waves-effect waves black"><i class="material-icons">T</i></a>
-	</div>
-	<div class="buttonForLetter">
-		<a class="btn-floating btn-large waves-effect waves black"><i class="material-icons">U</i></a>
-	</div>
-	<div class="buttonForLetter">
-		<a class="btn-floating btn-large waves-effect waves black"><i class="material-icons">V</i></a>
-	</div>
-	<div class="buttonForLetter">
-		<a class="btn-floating btn-large waves-effect waves black"><i class="material-icons">W</i></a>
-	</div>
-	<div class="buttonForLetter">
-		<a class="btn-floating btn-large waves-effect waves black"><i class="material-icons">X</i></a>
-	</div><br>
-	<div class="buttonForLetter">
-		<a class="btn-floating btn-large waves-effect waves black"><i class="material-icons">Y</i></a>
-	</div>
-	<div class="buttonForLetter">
-        <a class="btn-floating btn-large waves-effect waves black"><i class="material-icons">Z</i></a>
-	</div>	
-</div>
-		<footer>
-			<div class='gameOver'>
-				<button id='replay' class="btn btn-lg red" id="replay">Restart</button>
+			<div class="buttonForLetter">
+				<a class="btn-floating btn-large waves-effect waves black"><i class="material-icons">B</i></a>
 			</div>
-			<h5> </h5>
-			<div class='wordContainer'>
-				<input id='letter' type='text'>
+			<div class="buttonForLetter">
+				<a class="btn-floating btn-large waves-effect waves black"><i class="material-icons">C</i></a>
 			</div>
-		
-		</footer>
+			<div class="buttonForLetter">
+				<a class="btn-floating btn-large waves-effect waves black"><i class="material-icons">D</i></a>
+			</div>
+			<div class="buttonForLetter">
+				<a class="btn-floating btn-large waves-effect waves black"><i class="material-icons">E</i></a>
+			</div>
+			<div class="buttonForLetter">
+				<a class="btn-floating btn-large waves-effect waves black"><i class="material-icons">F</i></a>
+			</div>
+		</div><br>
+		<div class="buttonForLetter">
+			<a class="btn-floating btn-large waves-effect waves black"><i class="material-icons">G</i></a>
+		</div>
+		<div class="buttonForLetter">
+			<a class="btn-floating btn-large waves-effect waves black"><i class="material-icons">H</i></a>
+		</div>
+		<div class="buttonForLetter">
+			<a class="btn-floating btn-large waves-effect waves black"><i class="material-icons">I</i></a>
+		</div>
+		<div class="buttonForLetter">
+			<a class="btn-floating btn-large waves-effect waves black"><i class="material-icons">J</i></a>
+		</div>
+		<div class="buttonForLetter">
+			<a class="btn-floating btn-large waves-effect waves black"><i class="material-icons">K</i></a>
+		</div>
+		<div class="buttonForLetter">
+			<a class="btn-floating btn-large waves-effect waves black"><i class="material-icons">L</i></a>
+		</div><br>
+		<div class="buttonForLetter">
+			<a class="btn-floating btn-large waves-effect waves black"><i class="material-icons">M</i></a>
+		</div>
+		<div class="buttonForLetter">
+			<a class="btn-floating btn-large waves-effect waves black"><i class="material-icons">N</i></a>
+		</div>
+		<div class="buttonForLetter">
+			<a class="btn-floating btn-large waves-effect waves black"><i class="material-icons">O</i></a>
+		</div>
+		<div class="buttonForLetter">
+			<a class="btn-floating btn-large waves-effect waves black"><i class="material-icons">P</i></a>
+		</div>
+		<div class="buttonForLetter">
+			<a class="btn-floating btn-large waves-effect waves black"><i class="material-icons">Q</i></a>
+		</div>
+		<div class="buttonForLetter">
+			<a class="btn-floating btn-large waves-effect waves black"><i class="material-icons">R</i></a>
+		</div><br>
+		<div class="buttonForLetter">
+			<a class="btn-floating btn-large waves-effect waves black"><i class="material-icons">S</i></a>
+		</div>
+		<div class="buttonForLetter">
+			<a class="btn-floating btn-large waves-effect waves black"><i class="material-icons">T</i></a>
+		</div>
+		<div class="buttonForLetter">
+			<a class="btn-floating btn-large waves-effect waves black"><i class="material-icons">U</i></a>
+		</div>
+		<div class="buttonForLetter">
+			<a class="btn-floating btn-large waves-effect waves black"><i class="material-icons">V</i></a>
+		</div>
+		<div class="buttonForLetter">
+			<a class="btn-floating btn-large waves-effect waves black"><i class="material-icons">W</i></a>
+		</div>
+		<div class="buttonForLetter">
+			<a class="btn-floating btn-large waves-effect waves black"><i class="material-icons">X</i></a>
+		</div><br>
+		<div class="buttonForLetter">
+			<a class="btn-floating btn-large waves-effect waves black"><i class="material-icons">Y</i></a>
+		</div>
+		<div class="buttonForLetter">
+			<a class="btn-floating btn-large waves-effect waves black"><i class="material-icons">Z</i></a>
+		</div>
 	</div>
-	<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script> 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script> 
-	<script src="./app.js"></script> 
+	<footer>
+		<div class='gameOver'>
+			<button class="btn btn-lg red" id="replay">Restart</button>
+		</div>
+		<h5></h5>
+		<div class='wordContainer'>
+			<input id='letter' type='text'>
+		</div>
+	</footer>
+	<script src="http://code.jquery.com/jquery-3.3.1.min.js">
+	</script> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js">
+	</script> 
+	<script src="./app.js">
+	</script>
 </body>
 </html>
