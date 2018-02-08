@@ -42,7 +42,7 @@ $('.hidden-word').append(wordToLet.indexOf);
 //creating events to remove button when user clicks
   $('.buttonForLetter').click((event) => {
 if (wordToLet.indexOf(event.target.innerText)=== wordToLet.indexOf()) { 
-    console.log(wordToLet)
+    console.log(event.target.innerText)
 }
 })
 
@@ -51,7 +51,8 @@ if (wordToLet.indexOf(event.target.innerText)=== wordToLet.indexOf()) {
    if(wordToLet.indexOf(event.target.innerText) === -1){
      // letter does not exist 
      alert('Try again!')
-   }
+   } else {
+     alert('you got it')   }
 
      
    });
