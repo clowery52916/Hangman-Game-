@@ -1,21 +1,16 @@
 
+#input {
+text-align: center;
+}
+
 h1 {
     text-align: center;
     font-family: 'bangers', cursive;
+    background-color: red;
+
 }
 h5, p {
     text-align: center;  
-}
-p.guessed {
-    border-bottom: 5px solid black; 
-    width:40px;
-
-}
-#menu {
-    text-align: center;
-}
-.containerOfLetters {
-    margin: auto;
 }
 .buttonForLetter {
     display: inline-table;
@@ -26,7 +21,10 @@ p.guessed {
 }
 
    
-
+footer {
+    display: table-footer-group;
+    
+}
 
 .gameOver {
     -ms-flex-item-align: center;

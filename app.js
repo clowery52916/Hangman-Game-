@@ -6,8 +6,9 @@ let userName = prompt ('Hello! What\'s your name?');
    alert ('Hey there ' + userName +"" + '! I am really excited to play with you!');
  } 
  // getting the user's name 
-
- const kinderWords = ['bell', 'see', 'say', 'day', 'cat', 'hat', 'dog', 'log', 'mom', 'dad', 'car', 'horn'];
+ let lives = 6;
+ let input = "";
+ const kinderWords = ['BELL', 'SEE', 'SAY', 'DAY', 'CAT', 'HAT', 'DOG', 'LOG', 'MOM', 'DAD', 'CAR', 'HORN'];
 // array of words
 
 
@@ -24,53 +25,92 @@ let wordOnPage = Array.from(new Set(output));
 wordOnPage.random = function(){
   return this [Math.floor(Math.random()*this.length)];
 }
-//getting the rando words to create a single work, instead of an array
+//getting the rando words to create a single word, instead of an array
 let word = wordOnPage.random();
 (word);
 console.log(word);
 console.log(word.length);
 let wordToLet = word.split('')
+console.log(wordToLet);
+
+
+$('.hidden-word').append(wordToLet.indexOf);
+
+
+
+
+//creating events to remove button when user clicks
+  $('.buttonForLetter').click((event) => {
+if (wordToLet.indexOf(event.target.innerText)=== wordToLet.indexOf()) { 
+    console.log(wordToLet)
+}
+})
+
+
+   $('.buttonForLetter').click((event) => {
+   if(wordToLet.indexOf(event.target.innerText) === -1){
+     // letter does not exist 
+     alert('Try again!')
+   }
+
+     
+   });
+
+  // let correct = document.getElementsByClassName('.guesses')
+  // let unhide = document.getElementsByClassName('.hidden-word')
+     
+ 
+
+    
+
+  $('buttonForLetter').click(() => {
+    
+  });
+  $('.buttonForLetter').on('click', function(){
+      $(this).remove();
+    });
+    //creating event to reload page 
+    $('button').click((r) => {
+      location.reload();
+    });
+  
+ 
+  $(".buttonForLetter").click(function(){
+  })
+
+
+
+
+
+
+     
+
+
+
+
+
+
 
 //player to guess letter 
-const answer = wordToLet.map(function(letter) {
+// const answer = wordToLet.map(function(letter) {
 
-  return $(`.hidden-word`).append(`<span class="hidden answer ${letter}">${letter}</span>`)
+//   return $(`.hidden-word`).append(`<span class="hidden answer" ${letter}>${letter}</span>`)
   
   
-  function check(params) {
-    let correct = 0
-    let checkRandom = wordToLet.split('')
-    console.log(checkRandom);
-  }
+//   function check(params) {
+//     let correct = 0
+//     let checkRandom = wordToLet.split('')
+//     console.log(checkRandom);
+//   }
    
 
-});
+// });
 
 //once user picks letter remove it, remove it 
 // let button = document.getElementsByClassName('.buttonForLetters'),
-$('.buttonForLetter').click((f) => {
-  console.log (event.target.innerText);
-});
 
-// let hidden = "";
-// let guessWord = [];
-// let hiddenArray = [];
-// for(let i = 0; i < hidden.length; i++) {
-//   guessWord.push(hiddenWord[i]);
-//   hiddenArray.push("_  ")
-// }
-// $('.hidden-word').append(hiddenArray);
 
-// // ($button).click(function(event){
-// //   console.log(wordToLet)
-// //   if (answer.indexOf(wordToLet) >=0){
-// //     $(event.target).off()
-// //   }
-// //})
-// $('.buttonForLetter').on('click', function(){
-//   $(this).remove();
-// });
-// //reload page 
-// $('button').click((r) => {
-//   location.reload();
-// });
+
+
+
+     
