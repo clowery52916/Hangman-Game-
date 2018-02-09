@@ -52,11 +52,10 @@ if (wordToLet.indexOf(event.target.innerText)=== wordToLet.indexOf()) {
      // letter does not exist 
      alert('Try again!')
    } else {
-     alert('you got it')   }
-
-     
+     alert('you got it')   
+  }
    });
-
+ 
   // let correct = document.getElementsByClassName('.guesses')
   // let unhide = document.getElementsByClassName('.hidden-word')
      
