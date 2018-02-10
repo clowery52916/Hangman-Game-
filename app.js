@@ -55,6 +55,14 @@ if (wordToLet.indexOf(event.target.innerText)=== wordToLet.indexOf()) {
      alert('you got it')   
   }
    });
+   
+  // $('div[class = ".buttonForLetter"]').each(function(index, item){
+  //   if(parseInt($(item).data('index'))>2){
+  //     $(item).html(index+1);
+  //   }
+  // });
+
+   //loop through hidden word & make a list of all elements that equal the word with class of blank - when clicked, loop through word & check if letter # index === clicked work, if it is, change index of text to letter 
  
   // let correct = document.getElementsByClassName('.guesses')
   // let unhide = document.getElementsByClassName('.hidden-word')
