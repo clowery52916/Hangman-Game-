@@ -1,11 +1,4 @@
 
-
-
-let userName = prompt ('Hello! What\'s your name?');
- if (userName !== null) {
-   alert ('Hey there ' + userName +"" + '! I am really excited to play with you!');
- } 
- // getting the user's name 
  let lives = 6;
 
  const wordsToGuess = ['BELL', 'SEE', 'SAY', 'DAY', 'CAT', 'HAT', 'DOG', 'LOG', 'MOM', 'DAD', 'CAR', 'HORN'];
@@ -20,30 +13,29 @@ let getRandomWord = function() {
 }
 console.log(wordsToGuess)
 
-let output = [].map.call(wordsToGuess, getRandomWord);
-//making array of random  words 
-console.log(output)
-
-let wordOnPage = Array.from(new Set(output));
-console.log(wordOnPage)
-//shortening array of words 
-
-if (wordOnPage.random = function(){
-  return this [Math.floor(Math.random()*this.length)];
-})
-console.log(wordOnPage)
-//getting length of the new array 
-
-// getting the rando words to create a single word, instead of an array
-
-let word = wordOnPage.random()
+let word = wordsToGuess.random()
 console.log(word); //single word
 console.log(word.length);//length of the single word array 
 let wordToLet = word.split('')//splitting single word array into 2 different strings
 
 console.log(wordToLet);
+let output = [].map.call(wordsToGuess, getRandomWord);
+//making array of random  words 
+console.log(output)
 
-// $('#hidden-word').append(wordToLet);
+let w = Array.from(new Set(output));
+console.log(w)
+
+$('#hidden-word').append(wordToLet);
+//shortening array of words 
+
+if (w.random = function(){
+  return this [Math.floor(Math.random()*this.length)];
+})
+console.log(w)
+//getting length of the new array 
+
+
 
 
 let answerArray = [];
@@ -51,128 +43,63 @@ for (i=0; i < wordToLet; i++) {
   answerArray[i] = '_';
 //adding underscores
 }
-let lettersRemaining = wordToLet.length;
+let lettersRemaining = wordToLet.innerText;
 console.log(lettersRemaining);
 
-$('#hidden-word').text('Here is your word, good luck!  \n'+"\b  " + answerArray.join("  "));
+// $('#hidden-word').text('Here is your word, good luck!  \n'+"\b  " + answerArray.join("  "));
 console.log(answerArray);
 
-function gameOver(loss) {
-  $('.buttonForLetter').click((event) => {
-  if(loss (event.target.innerText) === -1){
+
+  $('.buttonForLetter').on((event) => {
+  	if(wordOnPage.indexOf (event.target.innerText) === -1){
     // letter does not exist 
     $(`#endGameMessage`).text('You didn\'t win this time!, Don\'t worry, you can try again!')
   } else {
     $(`#endGameMessage`).text('Wow! You are so smart! Keep practicing! You\'ll be reading in no time!')   
  }
   })
-}
 
- $('.buttonForLetter').click(function(guess){
 
-  let val = guess.target.innerText;
-  $(event.target).remove();
+//  $('.buttonForLetter').click(function(guess){
 
-console.log(guess);
+// 	let singleLet = guess.target.innerText;
+// 	$(event.target).remove();
+// 	//remove button
 
-let letters = 0; 
+// console.log(guess);
 
-  for (let j =0; j <= wordToLet.length; j++) {
+// let lettersRemaining = 0; 
 
-    //guess right & return the letter!!!!!!! YEEEEESSSSS
-    if(wordToLet[j] === val) {
-      answerArray[j] = val;
-      $('#hidden-word').text + answerArray.join(" ");
-      $(`#endGameMessage`).delay(600).text(rightLetter)
-      $(event.target.remove());
-      wordToLet--;
-      letters++;
-    }
-  console.log(rightLetter);
+//   for (let j =0; j <= wordOnPage.length; j++) {
 
-  } if (letters === 0) {
-    gameOver(false)
-  }
-  if(letters === 0) {
-    $(`#endGameMessage`).delay(600).text(wrongLetter);
-    lives--;
-  }
+
+
+const answer = wordOnPage.map(function(letter) {
+	return $(`#hidden-word`).append(`<span class ='hidden answer' ${letter}>${letter}</span>`);
 })
+$('.buttonForLetter').on('click', function(){
+	$(this).remove();
+  }),
+  //creating event to reload page 
+  $('button').click((r) => {
+	location.reload();
+  });
 
 
 
 // //creating events to remove button when user clicks
 
 
-  $('.buttonForLetter').click((event) => {
-if (answerArray.indexOf(event.target.innerText) === rightLetter.indexOf()) { 
-    console.log(event.target.innerText)
-}
-})
+//   $('.buttonForLetter').click((event) => {
+// if (wordToLet.indexOf(event.target.innerText) === -1) { 
+// 	wordToLet.push(answerArray.indexOf)
+// 	console.log(event.target.innerText)
+
+// }
+// }),
 //showing all incorrect letters picked in the log 
 
 
   //update user when game is over with a message 
 
-
-
   
-   
-//   // $('div[class = ".buttonForLetter"]').each(function(index, item){
-//   //   if(parseInt($(item).data('index'))>2){
-//   //     $(item).html(index+1);
-//   //   }
-//   // });
-
-//    //loop through hidden word & make a list of all elements that equal the word with class of blank - when clicked, loop through word & check if letter # index === clicked work, if it is, change index of text to letter 
- 
-//   // let correct = document.getElementsByClassName('.guesses')
-//   // let unhide = document.getElementsByClassName('#hidden-word')
-     
- 
-
-    
-
-  
-  $('.buttonForLetter').on('click', function(){
-      $(this).remove();
-    });
-    //creating event to reload page 
-    $('button').click((r) => {
-      location.reload();
-    });
-  
- 
-
-
-
-     
-
-
-
-
-
-
-
-// //player to guess letter 
-// // const answer = wordToLet.map(function(letter) {
-
-// //   return $(`#hidden-word`).append(`<span class="hidden answer" ${letter}>${letter}</span>`)
-  
-  
-// //   function check(params) {
-// //     let correct = 0
-// //     let checkRandom = wordToLet.split('')
-// //     console.log(checkRandom);
-// //   }
-   
-
-// // });
-
-// //once user picks letter remove it, remove it 
-// // let button = document.getElementsByClassName('.buttonForLetters'),
-
-
-
-
-     

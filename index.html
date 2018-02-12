@@ -13,12 +13,17 @@
 	<div class="container"></div>
 	<h1>YOU'RE INCREDIBLE!</h1>
 	<h5>Let's get ready to play! Follow these instructions and get ready to learn some awesome new words!</h5>
-	<p>The rules are simple! Pick any letter of the alphabet and try to solve the puzzle! You are given a category, and the numbers of spaces, are the number of words in the letter or phrase, the user or your opponent has chosen! If you don't get the correct letter, the character you have picked will be hanged! Watch out! If you think you can solve the puzzle, click the solve now!<br>
+	<p>The rules are simple! Pick any letter of the alphabet and try to solve the puzzle! Once you pick your letter, 
+		be sure to add it in the text box below, once you think you found the word, sound it out!! 
 	Good Luck!!!!</p>
 	<div class="btn-group" id="choose-category"></div>
 	<div id="hidden-word">
 	</div>
-	<div class="container">
+	<div id = "letterCount"></div>
+	<div id ='guessed' >
+		
+	</div>
+	<div class="buttonContainer">
 		
 		<div id ='A' class="buttonForLetter">
 				<a class="btn-floating btn-large waves-effect waves black"><i id = class="material-icons">A</i></a>
@@ -37,7 +42,7 @@
 			</div>
 			<div id = 'F' class="buttonForLetter">
 				<a class="btn-floating btn-large waves-effect waves black"><i class="material-icons">F</i></a>
-			</div></br>
+			</div>
 		
 		<div id = 'G' class="buttonForLetter">
 			<a class="btn-floating btn-large waves-effect waves black"><i class="material-icons">G</i></a>
@@ -50,25 +55,25 @@
 		</div>
 		<div id = 'J' class="buttonForLetter">
 			<a class="btn-floating btn-large waves-effect waves black"><i id='j' class="material-icons">J</i></a>
-		</div></br>
+		</div>
 		<div id ='K' class="buttonForLetter">
 			<a class="btn-floating btn-large waves-effect waves black"><i class="material-icons">K</i></a>
 		</div>
 		<div id = 'L' class="buttonForLetter">
 			<a class="btn-floating btn-large waves-effect waves black"><i class="material-icons">L</i></a>
-		</div></br>
+		</div>
 		<div id = 'M' class="buttonForLetter">
 			<a class="btn-floating btn-large waves-effect waves black"><i class="material-icons">M</i></a>
-		</div></br>
+		</div>
 		<div id = 'N' class="buttonForLetter">
 			<a class="btn-floating btn-large waves-effect waves black"><i class="material-icons">N</i></a>
-		</div></br>
+		</div>
 		<div id = 'O' class="buttonForLetter">
 			<a class="btn-floating btn-large waves-effect waves black"><i class="material-icons">O</i></a>
 		</div>
 		<div id = 'P' class="buttonForLetter">
 			<a class="btn-floating btn-large waves-effect waves black"><i class="material-icons">P</i></a>
-		</div></br>
+		</div>
 		<div id = 'Q' class="buttonForLetter">
 			<a class="btn-floating btn-large waves-effect waves black"><i class="material-icons">Q</i></a>
 		</div>
@@ -80,7 +85,7 @@
 		</div>
 		<div id='T' class="buttonForLetter">
 			<a class="btn-floating btn-large waves-effect waves black"><i class="material-icons">T</i></a>
-		</div></br>
+		</div>
 		<div id='U' class="buttonForLetter">
 			<a class="btn-floating btn-large waves-effect waves black"><i class="material-icons">U</i></a>
 		</div>
@@ -96,11 +101,22 @@
 		<div id='Y' class="buttonForLetter">
 			<a class="btn-floating btn-large waves-effect waves black"><i class="material-icons">Y</i></a>
 		</div>
-		<div id ='Z' class="buttonForLetter">
+		<div  id ='Z' class="buttonForLetter">
 			<a class="btn-floating btn-large waves-effect waves black"><i class="material-icons">Z</i></a>
 		</div>
 	</div>
 </div>	
+<h1></h1>
+<div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s12">
+          <textarea id="textarea1" class="materialize-textarea"></br></textarea></br>
+          <label for="textarea1">Add Your Letters Here!</label></br>
+        </div>
+      </div></br>
+    </form>
+  </div>
 <div id='endGameMessage'>
 </div>
 		<div class='gameOver'>
@@ -113,7 +129,7 @@
 	</script> 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js">
 	</script>
-	<script src="./app.js">
+	<script src="./style.js">
 	</script>
 </body>
 </html>

@@ -1,32 +1,58 @@
 
-#input {
-text-align: center;
+body {
+    background:
+    url('https://media.giphy.com/media/JlTgRsQheJ0f6/giphy.gif') no-repeat center fixed;
+    background-size: cover;
+    /* display: inline-table; */
 }
 .container {
-    display: inline;
-}
+    width: 800px;
+    margin: 0 auto;
 
+} 
+
+.buttonForLetter {
+     display: inline-table; 
+      justify-content: center; 
+      align-content: center; 
+      font-family: 'bangers', cursive;
+      color: goldenrod;
+    }
+.buttonContainer {
+    /* justify-content: center; */
+    align-content: center;
+    width:300px;
+    margin: 0 auto;
+    padding-left: inherit;
+}
+.active {
+    text-decoration-color: goldenrod;
+    font-family: 'bangers', cursive;
+}
+#textarea1 {
+    color: red;
+    font-family: 'bangers', cursive;
+    font-size: 20px;
+}
 h1 {
     text-align: center;
     font-family: 'bangers', cursive;
     background-color: red;
+    font-size: 40px;
 
 }
 h5, p {
     text-align: center;  
-}
-.buttonForLetter {
-    display: inline-table;
-    vertical-align: middle;
-    align-content: center;
-    margin: auto;
+    font-family: 'bangers', cursive;
+    color: goldenrod
 
+    
 }
+
 
    
 footer {
-    display: table-footer-group;
-    
+display: table-footer-group;
 }
 
 .gameOver {
