@@ -42,7 +42,7 @@ $( '#letterCount' ).text = lives;
 //letter count and allowed guess
 console.log( lives )
 console.log( answerArray );
-
+$(wordToLet).show
 
        $( '.buttonForLetter' ).click( ( event ) => {
 				if ( wordToLet.indexOf( event.target.innerText ) === -1 ) {
